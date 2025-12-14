@@ -1,7 +1,6 @@
 const shopItems = [
     {
         id: 1,
-        slug: "gitaar",
         image: "assets/guitar-stock.jpg",
         name: "Akoestische Gitaar",
         description: "Mooie gitaar met goede klank. Komt met een tas en reserve snaren erbij. Heel geschikt voor beginners.",
@@ -10,7 +9,6 @@ const shopItems = [
     },
     {
         id: 2,
-        slug: "piano",
         image: "assets/piano-stock.jpg",
         name: "Digitale Piano",
         description: "Digitale piano met 88 toetsen. Heeft ingebouwde speakers dus je kan meteen spelen. Toetsen voelen best realistisch aan.",
@@ -19,7 +17,6 @@ const shopItems = [
     },
     {
         id: 3,
-        slug: "drums",
         image: "assets/drums-stock.jpg",
         name: "Elektronisch Drumstel",
         description: "Elektrisch drumstel voor thuis. Niet te luid dus je buren worden niet gek. Krijg je er stokken, koptelefoon en een krukje bij.",
@@ -28,7 +25,6 @@ const shopItems = [
     },
     {
         id: 4,
-        slug: "microfoon",
         image: "assets/microphone-stock.jpg",
         name: "Studio Microfoon",
         description: "Studio mic voor opnames. Kwaliteit is prima, gebruik hem zelf ook. Komt met een popfilter en shockmount.",
@@ -37,7 +33,6 @@ const shopItems = [
     },
     {
         id: 5,
-        slug: "saxofoon",
         image: "assets/saxophone-stock.jpg",
         name: "Tenor Saxofoon",
         description: "Tenor sax met gouden afwerking. Klinkt goed en speelt lekker. Krijg je een complete set bij met alles wat je nodig hebt.",
@@ -46,7 +41,6 @@ const shopItems = [
     },
     {
         id: 6,
-        slug: "viool",
         image: "assets/violin-stock.jpg",
         name: "Viool",
         description: "Student viool die best goed klinkt. Ideaal om mee te beginnen. Krijg je er een koffer, strijkstok en hars bij.",
@@ -104,13 +98,13 @@ function handleAddToCart(e) {
     
     if (!item) return;
     
-    const existing = cart.find(cartItem => cartItem.id === item.slug);
+    const existing = cart.find(cartItem => cartItem.id === item.id);
     
     if (existing) {
         existing.quantity += 1;
     } else {
         cart.push({
-            id: item.slug,
+            id: item.id,
             name: item.name,
             price: item.price,
             image: item.image,
@@ -152,7 +146,8 @@ function renderCart() {
     
     cartEl.querySelectorAll('.remove-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
-            cart = cart.filter(cartItem => cartItem.id !== e.target.dataset.id);
+            const removeId = parseInt(e.target.dataset.id);
+            cart = cart.filter(cartItem => cartItem.id !== removeId);
             renderCart();
         });
     });
@@ -165,13 +160,13 @@ function handleWishlistToggle(e) {
     
     if (!item) return;
     
-    const index = wishlist.findIndex(wishItem => wishItem.id === item.slug);
+    const index = wishlist.findIndex(wishItem => wishItem.id === item.id);
     
     if (index > -1) {
         wishlist.splice(index, 1);
     } else {
         wishlist.push({
-            id: item.slug,
+            id: item.id,
             name: item.name,
             price: item.price,
             image: item.image
@@ -188,7 +183,7 @@ function updateHeartStates() {
         const item = shopItems.find(shopItem => shopItem.id === itemId);
         
         if (item) {
-            const inWishlist = wishlist.find(wishItem => wishItem.id === item.slug);
+            const inWishlist = wishlist.find(wishItem => wishItem.id === item.id);
             heart.classList.toggle('active', !!inWishlist);
         }
     });
