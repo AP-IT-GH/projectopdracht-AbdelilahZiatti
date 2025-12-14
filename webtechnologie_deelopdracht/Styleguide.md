@@ -35,7 +35,7 @@ https://www.pexels.com/photo/person-playing-brown-guitar-1407322/
 
 **Omschrijving:**
 
-Deze digitale piano biedt 88 gewogen toetsen die redelijk realistisch aanvoelen voor een elektrische piano. Het grote voordeel? Je hebt speakers ingebouwd, dus je hoeft niet meteen extra apparatuur te kopen om te kunnen spelen. Ideaal voor beginners en gevorderde pianisten die thuis willen oefenen zonder de buren gek te maken - sluit gewoon een koptelefoon aan en speel wanneer je wilt. De piano heeft 20 verschillende piano sounds die je kunt kiezen, en je kunt hem zelfs aansluiten op je computer via USB als je digitaal wilt opnemen.
+Deze digitale piano biedt 88 gewogen toetsen die redelijk realistisch aanvoelen voor een elektrische piano. Het grote voordeel? Je hebt speakers ingebouwd, dus je hoeft niet meteen extra apparatuur te kopen om te kunnen spelen. Ideaal voor beginners en gevorderde pianisten die thuis willen oefenen zonder de buren gek te maken, sluit gewoon een koptelefoon aan en speel wanneer je wilt. De piano heeft 20 verschillende piano sounds die je kunt kiezen, en je kunt hem zelfs aansluiten op je computer via USB als je digitaal wilt opnemen.
 
 **Specificaties:**
 - Toetsen: 88 gewogen toetsen
@@ -55,7 +55,7 @@ https://www.pexels.com/photo/black-yamaha-piano-164743/
 
 **Omschrijving:**
 
-Dit elektronische drumstel is perfect voor thuis oefenen zonder klachten van de buren. De mesh heads voelen verrassend realistisch aan en maken veel minder lawaai dan een akoestisch drumstel. Het set bestaat uit 5 drums en 3 bekkens - alles wat je nodig hebt om te beginnen. Met maar liefst 450 verschillende drum sounds en 30 voorgeprogrammeerde drumkits kun je eindeloos variëren in stijlen. Je krijgt er drumstokken, een koptelefoon en een krukje bij, dus je kunt meteen aan de slag. De metronoom functie en ingebouwde oefentracks helpen je om strak in de maat te blijven spelen.
+Dit elektronische drumstel is perfect voor thuis oefenen zonder klachten van de buren. De mesh heads voelen verrassend realistisch aan en maken veel minder lawaai dan een akoestisch drumstel. Het set bestaat uit 5 drums en 3 bekkens, alles wat je nodig hebt om te beginnen. Met maar liefst 450 verschillende drum sounds en 30 voorgeprogrammeerde drumkits kun je eindeloos variëren in stijlen. Je krijgt er drumstokken, een koptelefoon en een krukje bij, dus je kunt meteen aan de slag. De metronoom functie en ingebouwde oefentracks helpen je om strak in de maat te blijven spelen.
 
 **Specificaties:**
 - Pads: Mesh heads (stil)
