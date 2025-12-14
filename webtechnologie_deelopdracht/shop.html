@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="container">
- <a href="index.html" class="logo"> <img src="assets/logo.png" alt="Logo" width="200" height="200"></a>            
+ <a href="index.html" class="logo"> <img src="assets/logo.png" alt="Solara Music Shop logo" width="200" height="200"></a>            
  <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -20,8 +20,8 @@
                 </ul>
             </nav>
             <div class="searchbox">
-                <input type="search" placeholder="Zoek producten..." aria-label="Zoeken">
-                <button type="submit" aria-label="Zoeken"> <img src="assets/search.png" alt="Zoeken" width="20" height="20"></button>            </div>
+                <input type="search" placeholder="Zoek producten..." aria-label="Zoek naar instrumenten">
+                <button type="submit" aria-label="Zoekknop"><img src="assets/search.png" alt="" width="20" height="20"></button>            </div>
         </div>
     </header>
 
@@ -43,66 +43,8 @@
                     </aside>
                 </div>
                 
-                <div class="grid">
-                    <article class="item">
-                <div class="img-wrap" style="background-image: url('assets/guitar-stock.jpg');"></div>
-                <div class="details">
-                    <h3><a href="product-gitaar.html">Akoestische Gitaar</a></h3>
-                    <p>Mooie gitaar met goede klank. Komt met een tas en reserve snaren erbij. Heel geschikt voor beginners.</p>
-                    <p class="price">€349</p>
-                    <button class="addCart">Toevoegen aan winkelmandje</button>
-                </div>
-            </article>
-
-            <article class="item">
-                <div class="img-wrap" style="background-image: url('assets/piano-stock.jpg');"></div>
-                <div class="details">
-                    <h3><a href="product-piano.html">Digitale Piano</a></h3>
-                    <p>Digitale piano met 88 toetsen. Heeft ingebouwde speakers dus je kan meteen spelen. Toetsen voelen best realistisch aan.</p>
-                    <p class="price">€599</p>
-                    <button class="addCart">Toevoegen aan winkelmandje</button>
-                </div>
-            </article>
-
-            <article class="item">
-                <div class="img-wrap" style="background-image: url('assets/drums-stock.jpg');"></div>
-                <div class="details">
-                    <h3><a href="product-drums.html">Elektronisch Drumstel</a></h3>
-                    <p>Elektrisch drumstel voor thuis. Niet te luid dus je buren worden niet gek. Krijg je er stokken, koptelefoon en een krukje bij.</p>
-                    <p class="price">€749</p>
-                    <button class="addCart">Toevoegen aan winkelmandje</button>
-                </div>
-            </article>
-
-            <article class="item">
-                <div class="img-wrap" style="background-image: url('assets/microphone-stock.jpg');"></div>
-                <div class="details">
-                    <h3><a href="product-microfoon.html">Studio Microfoon</a></h3>
-                    <p>Studio mic voor opnames. Kwaliteit is prima, gebruik hem zelf ook. Komt met een popfilter en shockmount.</p>
-                    <p class="price">€189</p>
-                    <button class="addCart">Toevoegen aan winkelmandje</button>
-                </div>
-            </article>
-
-            <article class="item">
-                <div class="img-wrap" style="background-image: url('assets/saxophone-stock.jpg');"></div>  
-                <div class="details">
-                    <h3><a href="product-saxofoon.html">Tenor Saxofoon</a></h3>
-                    <p>Tenor sax met gouden afwerking. Klinkt goed en speelt lekker. Krijg je een complete set bij met alles wat je nodig hebt.</p>
-                    <p class="price">€899</p>
-                    <button class="addCart">Toevoegen aan winkelmandje</button>
-                </div>
-            </article>
-
-            <article class="item">
-                <div class="img-wrap" style="background-image: url('assets/violin-stock.jpg');"></div>
-                <div class="details">
-                    <h3><a href="product-viool.html">Viool</a></h3>
-                    <p>Student viool die best goed klinkt. Ideaal om mee te beginnen. Krijg je er een koffer, strijkstok en hars bij.</p>
-                    <p class="price">€279</p>
-                    <button class="addCart">Toevoegen aan winkelmandje</button>
-                </div>
-            </article>
+                <div class="grid" id="shop-items-grid">
+                    <!-- Shop items worden hier dynamisch geladen via JavaScript -->
                 </div>
             </div>
         </div>
@@ -115,6 +57,8 @@
             <p>Tel: 0475123456</p>
         </div>
     </footer>
+    
+    <script src="js/shop.js"></script>
 </body>
 </html>
 

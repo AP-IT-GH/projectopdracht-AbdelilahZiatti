@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
     <header>
         <div class="container">
-            <a href="index.html" class="logo"> <img src="assets/logo.png" alt="Logo" width="200" height="200"></a>
+            <a href="index.html" class="logo"> <img src="assets/logo.png" alt="Solara Music Shop logo" width="200" height="200"></a>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -20,13 +21,83 @@
                 </ul>
             </nav>
             <div class="searchbox">
-                <input type="search" placeholder="Zoek producten..." aria-label="Zoeken">
-                <button type="submit" aria-label="Zoeken"> <img src="assets/search.png" alt="Zoeken" width="20" height="20"></button>            </div>
+                <input type="search" placeholder="Zoek producten..." aria-label="Zoek naar instrumenten">
+                <button type="submit" aria-label="Zoekknop"><img src="assets/search.png" alt="" width="20" height="20"></button>            </div>
         </div>
     </header>
 
     <main>
         <div class="container">
+            <h1>Contacteer ons</h1>
+            <p class="intro">Heb je een vraag of opmerking? Vul het onderstaande formulier in en we nemen zo snel mogelijk contact met je op.</p>
+            
+            <div class="contact-grid">
+                <section class="contact-form-section">
+                    <h2>Stuur ons een bericht</h2>
+                    <form class="contact-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Naam *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mailadres *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="recipient">Wie wil je contacteren? *</label>
+                            <select id="recipient" name="recipient" required>
+                                <option value="">-- Maak een keuze --</option>
+                                <option value="websitebouwer">De websitebouwer</option>
+                                <option value="verantwoordelijke">De verantwoordelijke van de webshop</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Je bericht *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Verstuur bericht</button>
+                    </form>
+                </section>
+
+                <section class="map-section">
+                    <h2>Onze locaties</h2>
+                    <div id="map"></div>
+                    <div class="contact-info">
+                        <h3>Contactgegevens</h3>
+                        
+                        <div class="location-info">
+                            <h4>Antwerpen (Hoofdvestiging)</h4>
+                            <p><strong>Adres:</strong><br>
+                            Meir 85<br>
+                            2000 Antwerpen</p>
+                            <p><strong>Telefoon:</strong> 0475 123 456</p>
+                            <p><strong>Openingsuren:</strong><br>
+                            Ma-Vr: 9:00 - 18:00<br>
+                            Za: 10:00 - 17:00<br>
+                            Zo: Gesloten</p>
+                        </div>
+
+                        <div class="location-info">
+                            <h4>Brussel (Filiaal)</h4>
+                            <p><strong>Adres:</strong><br>
+                            Nieuwstraat 123<br>
+                            1000 Brussel</p>
+                            <p><strong>Telefoon:</strong> 0475 987 654</p>
+                            <p><strong>Openingsuren:</strong><br>
+                            Ma-Vr: 10:00 - 19:00<br>
+                            Za: 10:00 - 18:00<br>
+                            Zo: Gesloten</p>
+                        </div>
+                        
+                        <p class="general-contact"><strong>Email:</strong><br>
+                        <a href="mailto:info@solaramusic.be">info@solaramusic.be</a></p>
+                    </div>
+                </section>
+            </div>
         </div>
     </main>
 
@@ -37,6 +108,9 @@
             <p>Tel: 0475123456</p>
         </div>
     </footer>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/map.js"></script>
 </body>
 </html>
 
